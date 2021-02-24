@@ -30,6 +30,13 @@ app.get('/anotherpage', (req, res)=> {
     res.render('anotherpage')
 })
 
+
+
+// Catch
+app.get((req, res) =>{
+    res.render('404.js')
+})
+
 // Start the server!
 app.listen(PORT, () => {
     rowdyResults.print()
